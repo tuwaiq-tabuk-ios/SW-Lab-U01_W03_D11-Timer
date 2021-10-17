@@ -20,3 +20,5 @@ Fourth App that times the cooking time of both al dente and normal pasta
 
 ## Deadline 
 Monday 18th October 12:00 midday
+![Simulator Screen Shot - iPhone 12 - 2021-10-18 at 02 52 07](https://user-images.githubusercontent.com/91871608/137649529-721e6cbc-68c1-490e-8e6c-56278dba2c37.png)
+![Simulator Screen Shot - iPhone 12 - 2021-10-18 at 02 42 26](https://user-images.githubusercontent.com/91871608/137649543-64c3efe7-a424-47a6-9261-1e238a6c06ef.png)
