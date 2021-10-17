@@ -7,9 +7,9 @@ https://user-images.githubusercontent.com/91820775/137627930-8260e68d-7e67-4acb-
 
 ## Screenshot
 <div>
-<img src="https://github.com/MarzouqAlmukhlif/SW-Lab-U01_W03_D11-Timer/raw/main/image/1.png" width="150" height="250" />
-<img src="https://github.com/MarzouqAlmukhlif/SW-Lab-U01_W03_D11-Timer/raw/main/image/2.png" width="150" height="250" />
-<img src="https://github.com/MarzouqAlmukhlif/SW-Lab-U01_W03_D11-Timer/raw/main/image/3.png" width="150" height="250" />
+<img src="https://github.com/MarzouqAlmukhlif/SW-Lab-U01_W03_D11-Timer/raw/main/resources/image/1.png" width="150" height="250" />
+<img src="https://github.com/MarzouqAlmukhlif/SW-Lab-U01_W03_D11-Timer/raw/main/resources/image/2.png" width="150" height="250" />
+<img src="https://github.com/MarzouqAlmukhlif/SW-Lab-U01_W03_D11-Timer/raw/main/resources/image/3.png" width="150" height="250" />
 
 </div>
 
