@@ -20,3 +20,8 @@ Fourth App that times the cooking time of both al dente and normal pasta
 
 ## Deadline 
 Monday 18th October 12:00 midday
+## video 
+
+
+https://user-images.githubusercontent.com/91871990/137629400-c430ec0f-b476-4a49-a237-1bd43e82a745.mp4
+
