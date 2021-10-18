@@ -10,8 +10,8 @@ import AVFoundation
 class ViewController: UIViewController {
   
   var cookingTimer:Timer = Timer()
-  let denteTime: Int = 4    // 420
-  let normalTime: Int = 6   // 660
+  let denteTime: Int = 420 //4
+  let normalTime: Int = 660 //6
   var secondsLeft = 0
   var player:AVAudioPlayer?
   var secondsPassed = 0
