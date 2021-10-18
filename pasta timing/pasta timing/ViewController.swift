@@ -11,10 +11,11 @@ import AVFoundation
 class ViewController: UIViewController {
   
   var counter = 30
-  let denteTime = 4.0
-  let normalTime = 6.0
-  
+  let denteTime =  420.0
+  let normalTime =   660.0
+  var secondsPassed = 0.0
   var scoundLift = 0.0
+  var totalTime = 0.0
   var player: AVAudioPlayer?
   
   var progressTimer: Timer!
@@ -22,6 +23,7 @@ class ViewController: UIViewController {
   @IBOutlet weak var questionLabel: UILabel!
   @IBOutlet weak var progress: UIProgressView!
   
+  @IBOutlet weak var percentageLabel: UILabel!
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -47,12 +49,16 @@ class ViewController: UIViewController {
       scoundLift = denteTime
       questionLabel.text = "Boiling pasta al dente"
       progress.progress = 0.0
+      secondsPassed = 0.0
+      totalTime = denteTime
     }else{
       scoundLift = normalTime
       questionLabel.text = "Boiling pasta al normal"
       progress.progress = 0.0
+      secondsPassed = 0.0
+      totalTime = normalTime
     }
-
+    
     isStart = true
     self.progressTimer = Timer.scheduledTimer(timeInterval: 1.0,
                                               target: self,
@@ -63,17 +69,23 @@ class ViewController: UIViewController {
   
   @objc func updateCounter() {
     //example functionality
-    stopSound()
-      if scoundLift > 0 {
-        progress.setProgress(Float(scoundLift), animated: true)
-        print("\(scoundLift) scound to the end of the world")
-        scoundLift -= 1
-      }else{
-        questionLabel.text = "TIME IS OVER Remove pot from haet"
-        progressTimer.invalidate()
-        playSound()
-      }
-   
+    
+    if scoundLift > 0 {
+//      progress.setProgress(Float(scoundLift), animated: true)
+      stopSound()
+      secondsPassed += 1
+      let percentageProgress = secondsPassed / totalTime
+      percentageLabel.text = "\(Int(percentageProgress * 100))%"
+      progress.progress = Float(percentageProgress)
+      
+      print("\(scoundLift) scound to the end of the world")
+      scoundLift -= 1
+    }else{
+      questionLabel.text = "TIME IS OVER Remove pot from haet"
+      progressTimer.invalidate()
+      playSound()
+    }
+    
     
   }
   

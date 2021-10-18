@@ -107,13 +107,23 @@
                                                 </constraints>
                                                 <color key="progressTintColor" red="0.88627451660000001" green="0.2941176593" blue="0.1019607931" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </progressView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="on3-6C-1WG">
+                                                <rect key="frame" x="167" y="43" width="80" height="47"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="xId-nf-Ls7" secondAttribute="bottom" constant="98" id="0x5-rk-qHz"/>
+                                            <constraint firstItem="on3-6C-1WG" firstAttribute="leading" secondItem="7YL-x7-FIy" secondAttribute="leading" constant="167" id="F11-Lr-gr5"/>
+                                            <constraint firstItem="xId-nf-Ls7" firstAttribute="top" secondItem="on3-6C-1WG" secondAttribute="bottom" constant="8" symbolic="YES" id="GPE-Bh-hXb"/>
+                                            <constraint firstItem="on3-6C-1WG" firstAttribute="top" secondItem="7YL-x7-FIy" secondAttribute="top" constant="43" id="YQw-cJ-ci1"/>
                                             <constraint firstItem="xId-nf-Ls7" firstAttribute="top" secondItem="7YL-x7-FIy" secondAttribute="top" constant="98" id="c3Z-kl-2Vz"/>
                                             <constraint firstItem="xId-nf-Ls7" firstAttribute="leading" secondItem="7YL-x7-FIy" secondAttribute="leading" constant="20" id="i6n-R1-XMy"/>
                                             <constraint firstAttribute="trailing" secondItem="xId-nf-Ls7" secondAttribute="trailing" constant="20" id="pjm-ce-dzh"/>
+                                            <constraint firstAttribute="trailing" secondItem="on3-6C-1WG" secondAttribute="trailing" constant="167" id="zD4-ct-gEa"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -130,6 +140,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="percentageLabel" destination="on3-6C-1WG" id="je3-jb-Olg"/>
                         <outlet property="progress" destination="xId-nf-Ls7" id="lUO-vl-JGz"/>
                         <outlet property="questionLabel" destination="bR4-LX-Ka5" id="cbH-PK-2qL"/>
                     </connections>
