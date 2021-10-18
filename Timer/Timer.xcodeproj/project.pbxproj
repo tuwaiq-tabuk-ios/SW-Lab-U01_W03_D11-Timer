@@ -13,7 +13,8 @@
 		B83329A1271BFE75006B70B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B833299F271BFE75006B70B7 /* Main.storyboard */; };
 		B83329A3271BFE76006B70B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83329A2271BFE76006B70B7 /* Assets.xcassets */; };
 		B83329A6271BFE76006B70B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83329A4271BFE76006B70B7 /* LaunchScreen.storyboard */; };
-		B83329AE271BFE97006B70B7 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B83329AD271BFE97006B70B7 /* alarm.mp3 */; };
+		B83329AE271BFE97006B70B7 /* alarm0.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B83329AD271BFE97006B70B7 /* alarm0.mp3 */; };
+		B83329B0271D638E006B70B7 /* alarm1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B83329AF271D638E006B70B7 /* alarm1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,8 @@
 		B83329A2271BFE76006B70B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B83329A5271BFE76006B70B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B83329A7271BFE76006B70B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B83329AD271BFE97006B70B7 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
+		B83329AD271BFE97006B70B7 /* alarm0.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm0.mp3; sourceTree = "<group>"; };
+		B83329AF271D638E006B70B7 /* alarm1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm1.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 		B8332998271BFE75006B70B7 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
-				B83329AD271BFE97006B70B7 /* alarm.mp3 */,
+				B83329AF271D638E006B70B7 /* alarm1.mp3 */,
+				B83329AD271BFE97006B70B7 /* alarm0.mp3 */,
 				B8332999271BFE75006B70B7 /* AppDelegate.swift */,
 				B833299B271BFE75006B70B7 /* SceneDelegate.swift */,
 				B833299D271BFE75006B70B7 /* ViewController.swift */,
@@ -127,9 +130,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B83329AE271BFE97006B70B7 /* alarm.mp3 in Resources */,
+				B83329AE271BFE97006B70B7 /* alarm0.mp3 in Resources */,
 				B83329A6271BFE76006B70B7 /* LaunchScreen.storyboard in Resources */,
 				B83329A3271BFE76006B70B7 /* Assets.xcassets in Resources */,
+				B83329B0271D638E006B70B7 /* alarm1.mp3 in Resources */,
 				B83329A1271BFE75006B70B7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
