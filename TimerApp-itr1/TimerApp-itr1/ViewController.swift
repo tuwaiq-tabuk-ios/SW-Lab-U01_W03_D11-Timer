@@ -52,13 +52,8 @@ class ViewController: UIViewController {
   
   
   @objc func updateTimer (){
-    totalTime = secondsLeft
+    
     if secondsLeft > 0 {
-      secondsPassed = secondsLeft
-      let percentageProgress = (secondsPassed/totalTime)*100
-      print("percentageProgress: \(percentageProgress)")
-      timer.progress = Float(percentageProgress)
-      
       timer.setProgress(Float(secondsLeft), animated: true)
       print("\(secondsLeft) seconds.")
       secondsLeft -= 1
