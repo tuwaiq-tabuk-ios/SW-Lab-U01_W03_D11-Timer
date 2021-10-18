@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Awq-Wk-xOt" userLabel="Main_Stack _View">
+                                <rect key="frame" x="20" y="20" width="374" height="856.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y9k-A9-KeK" userLabel="Top_View">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="285.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsS-7I-yO6">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="285.5"/>
+                                                <string key="text">How do you want to boil pasta?
+ Al dente or regular</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="dsS-7I-yO6" secondAttribute="trailing" id="CHD-Bd-x8P"/>
+                                            <constraint firstItem="dsS-7I-yO6" firstAttribute="leading" secondItem="y9k-A9-KeK" secondAttribute="leading" id="Jo2-GW-KrF"/>
+                                            <constraint firstAttribute="bottom" secondItem="dsS-7I-yO6" secondAttribute="bottom" id="l0R-Nk-beq"/>
+                                            <constraint firstItem="dsS-7I-yO6" firstAttribute="top" secondItem="y9k-A9-KeK" secondAttribute="top" id="xuu-br-fe4"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yab-MK-eMy" userLabel="Middle_View">
+                                        <rect key="frame" x="0.0" y="285.5" width="374" height="285.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bcF-4X-ypP" userLabel="Central_Stack View">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="285.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRD-ZQ-qDN" userLabel="Dente_Button">
+                                                        <rect key="frame" x="0.0" y="4" width="187" height="278"/>
+                                                        <state key="normal" title="Drnte" backgroundImage="Dente"/>
+                                                        <connections>
+                                                            <action selector="boilingTypePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="edi-rs-WCk"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkl-CE-PGA" userLabel="Normal_Button">
+                                                        <rect key="frame" x="187" y="4" width="187" height="278"/>
+                                                        <state key="normal" title="Normal" backgroundImage="Normal"/>
+                                                        <connections>
+                                                            <action selector="boilingTypePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eri-Vt-4ir"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="bcF-4X-ypP" firstAttribute="leading" secondItem="yab-MK-eMy" secondAttribute="leading" id="1k6-Bc-cAJ"/>
+                                            <constraint firstItem="bcF-4X-ypP" firstAttribute="top" secondItem="yab-MK-eMy" secondAttribute="top" id="aoh-bc-2ZG"/>
+                                            <constraint firstAttribute="bottom" secondItem="bcF-4X-ypP" secondAttribute="bottom" id="yal-Zb-2ee"/>
+                                            <constraint firstAttribute="trailing" secondItem="bcF-4X-ypP" secondAttribute="trailing" id="zDj-Zr-B3S"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3f3-YO-ZtB" userLabel="Bottom_View">
+                                        <rect key="frame" x="0.0" y="571" width="374" height="285.5"/>
+                                        <subviews>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fno-GD-K7x" userLabel="Timer_Progress_View">
+                                                <rect key="frame" x="20" y="120" width="334" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="6OM-nH-4qO"/>
+                                                </constraints>
+                                            </progressView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="tintColor" red="0.96620899439999997" green="0.13471632389999999" blue="0.095009426470000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="fno-GD-K7x" secondAttribute="trailing" constant="20" id="CqA-3X-xgB"/>
+                                            <constraint firstItem="fno-GD-K7x" firstAttribute="leading" secondItem="3f3-YO-ZtB" secondAttribute="leading" constant="20" id="QOO-vK-OgP"/>
+                                            <constraint firstAttribute="bottom" secondItem="fno-GD-K7x" secondAttribute="bottom" constant="161.5" id="SpR-lJ-s7x"/>
+                                            <constraint firstAttribute="height" constant="20" id="ZR9-pR-Csg"/>
+                                            <constraint firstItem="fno-GD-K7x" firstAttribute="top" secondItem="3f3-YO-ZtB" secondAttribute="top" constant="120" id="ucl-dF-QPZ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="3f3-YO-ZtB" secondAttribute="trailing" constant="20" id="EtP-Qw-2d1"/>
+                                    <constraint firstItem="3f3-YO-ZtB" firstAttribute="leading" secondItem="Awq-Wk-xOt" secondAttribute="leading" constant="20" id="Iv2-Q5-53P"/>
+                                    <constraint firstAttribute="bottom" secondItem="3f3-YO-ZtB" secondAttribute="bottom" id="TRm-3D-zIW"/>
+                                    <constraint firstItem="3f3-YO-ZtB" firstAttribute="top" secondItem="yab-MK-eMy" secondAttribute="bottom" id="ZPI-ff-vpf"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Awq-Wk-xOt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="1eB-Az-VcZ"/>
+                            <constraint firstAttribute="bottom" secondItem="Awq-Wk-xOt" secondAttribute="bottom" constant="20" id="9rc-9Y-e8S"/>
+                            <constraint firstItem="Awq-Wk-xOt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="NOx-8Q-XgW"/>
+                            <constraint firstAttribute="trailing" secondItem="Awq-Wk-xOt" secondAttribute="trailing" constant="20" id="uI4-yN-8hY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="fno-GD-K7x" id="GBB-yG-py7"/>
+                        <outlet property="questionLabel" destination="dsS-7I-yO6" id="fPf-Ir-zYk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="76.339285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Dente" width="180.5" height="278"/>
+        <image name="Normal" width="180.66667175292969" height="278"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
