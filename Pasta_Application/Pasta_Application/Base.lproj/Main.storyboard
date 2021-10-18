@@ -38,13 +38,13 @@ AI dente or regular </string>
                                             <constraint firstAttribute="height" constant="250" id="THS-A7-e7E"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s4o-AH-DzH" userLabel="Bottom_View">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s4o-AH-DzH" userLabel="Middle_View">
                                         <rect key="frame" x="0.0" y="250" width="414" height="388"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZVw-Mh-qaR">
                                                 <rect key="frame" x="20" y="20" width="374" height="348"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVG-PM-bgS">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVG-PM-bgS" userLabel="right_Button_View">
                                                         <rect key="frame" x="0.0" y="0.0" width="177" height="348"/>
                                                         <subviews>
                                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dente" translatesAutoresizingMaskIntoConstraints="NO" id="3V6-xG-x6v">
