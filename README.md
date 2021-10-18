@@ -18,5 +18,13 @@ Fourth App that times the cooking time of both al dente and normal pasta
 2. In **Timer**, the user selects to boil pasta al dente or normal. In the first choice the timer is shorter than the latter.
 3. When the time is up, the user is notified with the sound of an alarm and a message on the screen indicating that he/she can remove the pasta from the heat.
 
+
+![Simulator Screen Shot - iPhone 12 - 2021-10-18 at 13 38 39](https://user-images.githubusercontent.com/91871708/137715835-bf8eeac3-d9fb-4ecc-93a8-687a331cb86a.png)
+
+
+
+
+
+
 ## Deadline 
 Monday 18th October 12:00 midday
