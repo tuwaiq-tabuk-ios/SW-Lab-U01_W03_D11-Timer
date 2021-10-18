@@ -10,7 +10,7 @@ import AVFoundation
 
 class ViewController: UIViewController {
   
-  let normalTime  = 620 //11min , 6
+  let normalTime  = 660 //11min , 6
   let denteTime = 420 //7min , 4
   
   
