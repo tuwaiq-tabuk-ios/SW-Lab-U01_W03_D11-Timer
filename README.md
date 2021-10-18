@@ -4,6 +4,8 @@ Fourth App that times the cooking time of both al dente and normal pasta
 ## Demo Video
 
 ### New App
+https://user-images.githubusercontent.com/91820775/137713012-47b6692c-bf60-4309-a10d-d869a3907005.mp4
+
 
 
 ### Old App
@@ -21,9 +23,9 @@ https://user-images.githubusercontent.com/91820775/137627930-8260e68d-7e67-4acb-
 
 ### Old App
 <div>
-<img src="https://github.com/MarzouqAlmukhlif/SW-Lab-U01_W03_D11-Timer/raw/main/resources/image/1.png" width="150" height="250" />
-<img src="https://github.com/MarzouqAlmukhlif/SW-Lab-U01_W03_D11-Timer/raw/main/resources/image/2.png" width="150" height="250" />
-<img src="https://github.com/MarzouqAlmukhlif/SW-Lab-U01_W03_D11-Timer/raw/main/resources/image/3.png" width="150" height="250" />
+<img src="https://github.com/MarzouqAlmukhlif/SW-Lab-U01_W03_D11-Timer/raw/main/resources/imageOldApp/1.png" width="150" height="250" />
+<img src="https://github.com/MarzouqAlmukhlif/SW-Lab-U01_W03_D11-Timer/raw/main/resources/imageOldApp/2.png" width="150" height="250" />
+<img src="https://github.com/MarzouqAlmukhlif/SW-Lab-U01_W03_D11-Timer/raw/main/resources/imageOldApp/3.png" width="150" height="250" />
 </div>
 
 ## Topics
