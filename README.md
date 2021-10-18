@@ -19,4 +19,8 @@ Fourth App that times the cooking time of both al dente and normal pasta
 3. When the time is up, the user is notified with the sound of an alarm and a message on the screen indicating that he/she can remove the pasta from the heat.
 
 ## Deadline 
-Monday 18th October 12:00 midday
+Monday 1
+
+https://user-images.githubusercontent.com/91871666/137692843-3f49debe-2ef3-490e-bae5-8c4431310731.mp4
+
+8th October 12:00 midday
