@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Root_View">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="GiG-f1-Lmb" userLabel="Central_Stack_View">
+                                <rect key="frame" x="0.0" y="64" width="414" height="792"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Smy-od-jq0" userLabel="Top_View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="264"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfW-S8-6W4" userLabel="Question_Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="264"/>
+                                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">How do you want to boil pasta?
+Al dente or regular</string>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="tfW-S8-6W4" firstAttribute="top" secondItem="Smy-od-jq0" secondAttribute="top" id="Azy-fF-PRc"/>
+                                            <constraint firstAttribute="trailing" secondItem="tfW-S8-6W4" secondAttribute="trailing" id="UIm-6O-Yc3"/>
+                                            <constraint firstAttribute="bottom" secondItem="tfW-S8-6W4" secondAttribute="bottom" id="rgz-u1-WnN"/>
+                                            <constraint firstItem="tfW-S8-6W4" firstAttribute="leading" secondItem="Smy-od-jq0" secondAttribute="leading" id="yQk-nC-IMe"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eXa-WZ-FF7" userLabel="Butten_Timer_View">
+                                        <rect key="frame" x="0.0" y="264" width="414" height="264"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Y2T-yD-qhi" userLabel="Boiling_Type_Pressed">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="264"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vL9-TT-Ppt" userLabel="Normal_Button">
+                                                        <rect key="frame" x="0.0" y="0.0" width="207" height="264"/>
+                                                        <color key="backgroundColor" red="0.63137254899999995" green="0.62999999520000005" blue="0.62999999520000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" title="Normal" image="Dente"/>
+                                                        <connections>
+                                                            <action selector="boilingTypePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zkp-XJ-xmI"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vka-ro-Df0" userLabel="Dente_Button">
+                                                        <rect key="frame" x="207" y="0.0" width="207" height="264"/>
+                                                        <color key="backgroundColor" red="0.63137254899999995" green="0.62999999520000005" blue="0.62999999520000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <state key="normal" title="Dente" image="Normal"/>
+                                                        <connections>
+                                                            <action selector="boilingTypePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="etZ-41-kyq"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.54315476190476186" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Y2T-yD-qhi" secondAttribute="trailing" id="dd0-az-H6m"/>
+                                            <constraint firstItem="Y2T-yD-qhi" firstAttribute="top" secondItem="eXa-WZ-FF7" secondAttribute="top" id="lxY-Ku-mgO"/>
+                                            <constraint firstItem="Y2T-yD-qhi" firstAttribute="leading" secondItem="eXa-WZ-FF7" secondAttribute="leading" id="mal-Eo-a8z"/>
+                                            <constraint firstAttribute="bottom" secondItem="Y2T-yD-qhi" secondAttribute="bottom" id="wY2-8A-K7B"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jj5-Nr-ses" userLabel="Bottom_View">
+                                        <rect key="frame" x="0.0" y="528" width="414" height="264"/>
+                                        <subviews>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="T01-Dp-CpI" userLabel="Timer_Progres_View">
+                                                <rect key="frame" x="20" y="122" width="374" height="20"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" red="0.98431372549019602" green="0.32549019607843138" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="UcO-Sz-u6f"/>
+                                                </constraints>
+                                            </progressView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.45796130952380953" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="T01-Dp-CpI" firstAttribute="centerY" secondItem="Jj5-Nr-ses" secondAttribute="centerY" id="Yfx-eE-Ew8"/>
+                                            <constraint firstAttribute="trailing" secondItem="T01-Dp-CpI" secondAttribute="trailing" constant="20" id="YzT-dl-8cR"/>
+                                            <constraint firstItem="T01-Dp-CpI" firstAttribute="leading" secondItem="Jj5-Nr-ses" secondAttribute="leading" constant="20" id="mih-N8-io6"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="eXa-WZ-FF7" secondAttribute="trailing" id="DR8-pY-6RN"/>
+                                    <constraint firstItem="eXa-WZ-FF7" firstAttribute="top" secondItem="Smy-od-jq0" secondAttribute="bottom" id="cWT-eC-iJr"/>
+                                    <constraint firstItem="eXa-WZ-FF7" firstAttribute="leading" secondItem="GiG-f1-Lmb" secondAttribute="leading" id="rZP-SV-vAU"/>
+                                    <constraint firstItem="Jj5-Nr-ses" firstAttribute="top" secondItem="eXa-WZ-FF7" secondAttribute="bottom" id="vOb-bI-zwd"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="GiG-f1-Lmb" secondAttribute="trailing" id="H8S-hI-SJa"/>
+                            <constraint firstItem="GiG-f1-Lmb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="JAw-xJ-pRf"/>
+                            <constraint firstItem="GiG-f1-Lmb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RBZ-Vy-VZ9"/>
+                            <constraint firstItem="GiG-f1-Lmb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="W7n-tE-25P"/>
+                            <constraint firstAttribute="trailing" secondItem="GiG-f1-Lmb" secondAttribute="trailing" id="h1r-Ud-Bpr"/>
+                            <constraint firstAttribute="bottom" secondItem="GiG-f1-Lmb" secondAttribute="bottom" constant="40" id="hUe-ce-QIc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progresView" destination="T01-Dp-CpI" id="7iR-Y5-WtI"/>
+                        <outlet property="questionLabel" destination="tfW-S8-6W4" id="ZMQ-so-YWd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439" y="83"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Dente" width="180.5" height="278"/>
+        <image name="Normal" width="180.5" height="278"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
