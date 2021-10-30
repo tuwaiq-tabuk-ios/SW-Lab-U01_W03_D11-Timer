@@ -25,8 +25,7 @@ class ViewController: UIViewController {
   
   
 
-  @IBAction func boilingTypePressed (_ sender: UIButton,
-                                     time: Int){
+  @IBAction func boilingTypePressed (_ sender: UIButton,time: Int){
     print("\n\nSender: \(sender.currentTitle!)")
     let boilingType = sender.currentTitle!
     

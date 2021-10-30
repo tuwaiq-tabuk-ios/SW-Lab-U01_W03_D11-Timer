@@ -13,7 +13,7 @@
 		39241BE9271D6B1800649462 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39241BE7271D6B1800649462 /* Main.storyboard */; };
 		39241BEB271D6B1900649462 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39241BEA271D6B1900649462 /* Assets.xcassets */; };
 		39241BEE271D6B1900649462 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39241BEC271D6B1900649462 /* LaunchScreen.storyboard */; };
-		39AE132C271D72A200D20EE5 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 39AE132B271D72A200D20EE5 /* alarm.mp3 */; };
+		39DE8365272DA64B00525D14 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 39DE8364272DA64B00525D14 /* alarm.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		39241BEA271D6B1900649462 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39241BED271D6B1900649462 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39241BEF271D6B1900649462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		39AE132B271D72A200D20EE5 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alarm.mp3; path = "../../../../../../../TWQ-RES U1-04 Timer/alarm.mp3"; sourceTree = "<group>"; };
+		39DE8364272DA64B00525D14 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 		39241BE0271D6B1800649462 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
-				39AE132B271D72A200D20EE5 /* alarm.mp3 */,
+				39DE8364272DA64B00525D14 /* alarm.mp3 */,
 				39241BE1271D6B1800649462 /* AppDelegate.swift */,
 				39241BE3271D6B1800649462 /* SceneDelegate.swift */,
 				39241BE5271D6B1800649462 /* ViewController.swift */,
@@ -127,7 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39AE132C271D72A200D20EE5 /* alarm.mp3 in Resources */,
+				39DE8365272DA64B00525D14 /* alarm.mp3 in Resources */,
 				39241BEE271D6B1900649462 /* LaunchScreen.storyboard in Resources */,
 				39241BEB271D6B1900649462 /* Assets.xcassets in Resources */,
 				39241BE9271D6B1800649462 /* Main.storyboard in Resources */,
